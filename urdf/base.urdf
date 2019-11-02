@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
      Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="base">
   <link
     name="base_link">
+
     <inertial>
       <origin
-        xyz="0.12268 0.22937 0.32047"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
         value="3.7475" />
       <inertia
-        ixx="0.027294"
-        ixy="7.0321E-19"
-        ixz="-2.5475E-17"
-        iyy="0.054032"
-        iyz="5.0062E-19"
-        izz="0.027294" />
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
     </inertial>
     <visual>
       <origin
@@ -26,7 +27,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base/meshes/base_link.STL" />
+          filename="/home/alwin/catkin_ws/src/base/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +41,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base/meshes/base_link.STL" />
+          filename="/home/alwin/catkin_ws/src/base/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +67,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base/meshes/wheel_1.STL" />
+          filename="/home/alwin/catkin_ws/src/base/meshes/wheel_1.STL" />
       </geometry>
       <material
         name="">
@@ -80,13 +81,13 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base/meshes/wheel_1.STL" />
+          filename="/home/alwin/catkin_ws/src/base/meshes/wheel_1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
     name="revolute_1"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="0.31599 -0.34198 0.19925"
       rpy="-1.5708 -1.2174 1.46" />
@@ -102,6 +103,8 @@
       effort="0"
       velocity="0" />
   </joint>
+
+
   <link
     name="wheel_2">
     <inertial>
@@ -120,11 +123,11 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0 0 0.137"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base/meshes/wheel_2.STL" />
+          filename="/home/alwin/catkin_ws/src/base/meshes/wheel_1.STL" />
       </geometry>
       <material
         name="">
@@ -138,13 +141,13 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base/meshes/wheel_2.STL" />
+          filename="/home/alwin/catkin_ws/src/base/meshes/wheel_1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
     name="revolute_2"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="-0.012499 -0.011797 0.19925"
       rpy="1.5708 1.01 0.41277" />
@@ -178,11 +181,11 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0 0 0.038"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base/meshes/wheel_3.STL" />
+          filename="/home/alwin/catkin_ws/src/base/meshes/wheel_1.STL" />
       </geometry>
       <material
         name="">
@@ -196,13 +199,13 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base/meshes/wheel_3.STL" />
+          filename="/home/alwin/catkin_ws/src/base/meshes/wheel_1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
     name="revolute_3"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="-0.016526 -0.50962 0.19925"
       rpy="-1.5708 0.48737 -0.63443" />
